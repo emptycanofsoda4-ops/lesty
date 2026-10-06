@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💖 Couple Quest</title>
+
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+
+    <!-- Floating Background -->
+    <div id="floating-container"></div>
+
+    <!-- Cursor Hearts -->
+    <div id="cursor-hearts"></div>
+
+    <!-- Navigation -->
+    <nav>
+        <h1>💖 Couple Quest</h1>
+
+        <div class="nav-links">
+            <button onclick="showPage('home')">Home</button>
+            <button onclick="showPage('activities')">Activities</button>
+            <button onclick="showPage('games')">Games</button>
+            <button onclick="showPage('questions')">Questions</button>
+            <button onclick="showPage('achievements')">Achievements</button>
+        </div>
+    </nav>
+
+    <!-- HOME -->
+    <section class="page active" id="home">
+
+        <div class="glass">
+
+            <h2>Welcome Back ❤️</h2>
+
+            <p>
+                Every click is another memory with
+                <span class="pink">Lesty</span>.
+            </p>
+
+            <button class="big-btn" onclick="showPage('activities')">
+                🎲 Start Adventure
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- ACTIVITIES -->
+    <section class="page" id="activities">
+
+        <div class="glass">
+
+            <h2>🎲 Random Activity</h2>
+
+            <div id="activityBox">
+
+                Press Generate ❤️
+
+            </div>
+
+            <button class="big-btn" onclick="generateActivity()">
+
+                Generate
+
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- GAMES -->
+    <section class="page" id="games">
+
+        <div class="glass">
+
+            <h2>🎮 Mini Games</h2>
+
+            <div id="gameArea">Pick a game below ❤️</div>
+
+            <div class="game-grid">
+
+                <div class="game-card">
+                    ❤️ Love Sync
+                    <button onclick="loveSync()">
+                        Play
+                    </button>
+                </div>
+
+                <div class="game-card">
+                    😂 Click Battle
+                    <button onclick="clickBattle()">
+                        Play
+                    </button>
+                </div>
+
+                <div class="game-card">
+                    🎨 Drawing Prompt
+                    <button onclick="drawingPrompt()">
+                        Play
+                    </button>
+                </div>
+
+                <div class="game-card">
+                    🎲 Truth or Dare
+                    <button onclick="truthOrDare()">
+                        Play
+                    </button>
+                </div>
+
+                <div class="game-card">
+                    🤔 Would You Rather
+                    <button onclick="wouldYouRather()">
+                        Play
+                    </button>
+                </div>
+
+                <div class="game-card">
+                    🧠 Memory Match
+                    <button onclick="memoryMatch()">
+                        Play
+                    </button>
+                </div>
+
+                <div class="game-card">
+                    💞 Know Me Quiz
+                    <button onclick="knowMe()">
+                        Play
+                    </button>
+                </div>
+
+                <div class="game-card">
+                    ⭕ Tic-Tac-Toe
+                    <button onclick="ticTacToe()">
+                        Play
+                    </button>
+                </div>
+
+                <div class="game-card">
+                    ⚡ Quick Draw
+                    <button onclick="quickDraw()">
+                        Play
+                    </button>
+                </div>
+
+                <div class="game-card">
+                    ✏️ Finish the Sentence
+                    <button onclick="finishSentence()">
+                        Play
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- QUESTIONS -->
+    <section class="page" id="questions">
+
+        <div class="glass">
+
+            <h2>💬 Conversation Starter</h2>
+
+            <div id="questionBox">
+
+                Press Generate ❤️
+
+            </div>
+
+            <button class="big-btn" onclick="generateQuestion()">
+
+                Generate
+
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- ACHIEVEMENTS -->
+    <section class="page" id="achievements">
+
+        <div class="glass">
+
+            <h2>🏆 Achievements</h2>
+
+            <div class="achievement">
+
+                ❤️ First Visit
+
+            </div>
+
+            <div class="achievement">
+
+                🔒 Played 5 Games
+
+            </div>
+
+            <div class="achievement">
+
+                🔒 50 Activities
+
+            </div>
+
+            <div class="achievement">
+
+                🔒 Secret Finder
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Bear -->
+    <div id="bear">
+
+        🧸
+
+        <div id="bearSpeech">
+
+            Hi Honey ❤️
+
+        </div>
+
+    </div>
+
+    <!-- Popup -->
+    <div id="popup">
+
+        Achievement Unlocked!
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+
+        Made with ❤️ for Lesty
+
+    </footer>
+
+    <script src="BOB.js"></script>
+
+</body>
+</html>
